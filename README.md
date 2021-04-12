@@ -1,5 +1,6 @@
-# drawing machine 3.0~ 3.6
+# drawing machine - cloud!
 
+do imaginative drawing on the cloud!
 
 
 
