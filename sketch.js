@@ -98,8 +98,9 @@ function keyTyped() {
   if (key === 's') {
     saveCanvas('fileName', 'png');
     // value = 0;
-  } else if (key === 'd') {
+  } else if (key === 'c') {
     //background(167, 200, 242);
+    clear();
 
 
   }
