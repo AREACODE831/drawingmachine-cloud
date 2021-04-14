@@ -13,9 +13,18 @@ p{
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
   font-size: 15px;
 }
+h5{
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  font-size: 11px;
+  margin-left: 200px;
+}
 canvas {
   display: block;
   margin: auto;
+}
+img {
+width: 20%;
+margin-left: 300px;
 }
 
 button {
