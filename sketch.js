@@ -26,7 +26,7 @@ function preload() {
 }
 
 function setup() {
-  cv = createCanvas(400, 400);
+  cv = createCanvas(550, 550);
   cv.parent("#canvasDiv");
   background(107, 152, 242);
 
