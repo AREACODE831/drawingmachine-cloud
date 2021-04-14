@@ -50,20 +50,20 @@ function draw() {
     colorMode(HSB);
     strokeWeight(strokeWidth);
 
-  noiseOffset += 0.05;
-  strokeWidth = noise(noiseOffset) * 10;
+    noiseOffset += 0.05;
+    strokeWidth = noise(noiseOffset) * 10;
 
 
-  if (mouseIsPressed) {
-    //line(mouseX, mouseY, pmouseX, pmouseY);
-    // backgroundColor -= 2;
-    // background(backgroundColor);
-    //stroke(map(mouseX, 0, 600, 0, 255, true))
-    stroke((5*frameCount) % 360, 40, 100);
-    fill((5*frameCount) % 360, 100, 100);
-    strokeWeight(5);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  }
+    if (mouseIsPressed) {
+      //line(mouseX, mouseY, pmouseX, pmouseY);
+      // backgroundColor -= 2;
+      // background(backgroundColor);
+      //stroke(map(mouseX, 0, 600, 0, 255, true))
+      stroke((5 * frameCount) % 360, 40, 100);
+      fill((5 * frameCount) % 360, 100, 100);
+      strokeWeight(5);
+      line(mouseX, mouseY, pmouseX, pmouseY);
+    }
     // array.push([mouseX, mouseY]);
     //grey scale random
     // line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY);
@@ -78,8 +78,7 @@ function draw() {
   }
 
   if (animating == true) {
-     clear();
-    //white clean the canvas image before
+    clear();
     image(cloud[imageCounter], width / 2, height / 2);
 
     if (imageCounter < cloud.length - 1) {
@@ -114,18 +113,12 @@ function randomizer() {
 
   if (names[0]) {
     clear();
-
-    //names random
     randomIndex = int(random(names.length));
-
-    // textAlign(CENTER, CENTER);
-    // text('${names[randomIndex].name} says...', 180, 150);
     image(random(cloud), width / 2, height / 2);
 
   } else {
     background(242, 118, 107);
     text("Do you want another try?", 210, 250);
-
   }
 
 }
@@ -136,6 +129,7 @@ function buttonPressed() {
   setTimeout(randomizer, 800);
 
 }
+
 function mousePressed() {
   array = [];
   backgroundColor = 255;
